@@ -44,3 +44,5 @@ if (left === -1) right = -1;
 else right = findOcc(arr, elem, left + 1, arr.length - 1, left, false);
 
 console.log(left, right);
+const total = right - left - 1;
+console.log(`Total Occurrence ${total}`);

@@ -1,7 +1,7 @@
 let binarySearch = (arr, start, end, elem) => {
   //console.log(start, end);
   if (end < start) return "Not Found";
-  if (start === end) return start == elem ? start : "Not Found";
+  if (start === end) return arr[start] == elem ? start : "Not Found";
   const mid = Math.floor((start + end) / 2);
   if (arr[mid] === elem) return mid;
   else if (elem > arr[mid]) return binarySearch(arr, mid + 1, end, elem);
